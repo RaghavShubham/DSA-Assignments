@@ -56,25 +56,28 @@ int k=0;
 for(int i=0;i<a;i++)
 {
 int c=0;
-
  for(int j=0;j<b;j++)
   {
-   if(A[i]==B[j])
-    {c=1;
-      C[k++]=A[i];}
+    if(A[i]==B[j])
+    {
+      c=1;
+      C[k++]=A[i];
+    }
   }
   if(c==0)
-  {l=1;
-  cout<<A[i]<<"  ";
+  {
+    l=1;
+    cout<<A[i]<<"  ";
   }
-    }
+}
   for(int j=0;j<b;j++)
-  {cout<<B[j]<<"  ";
-   }
-   if(b==0&&l==0)
-   {
+  {
+    cout<<B[j]<<"  ";
+  }
+  if(b==0&&l==0)
+  {
     cout<<" No One";
-    }
+  }
 
 cout<<"\n Students who play both cricket and badminton: ";
  for(int i=0;i<k;i++)

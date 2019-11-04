@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
-  cout<<"
+  int a=10,b=20;
+  swap(a,b);
+  cout<<a<<" "<<b;
   return 0;
 }

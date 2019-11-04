@@ -15,7 +15,7 @@ void push(char ch)
     {
         top=nptr;
     }
-    else 
+    else
     {
 		save =top;
     	top=nptr;
@@ -27,14 +27,14 @@ int isEmpty()
     if(top == NULL)
      return(1);
     else
-     return(0); 
+     return(0);
 }
 char pop()
 {
     nptr=new node;
     nptr=top;
     top=top->next;
-    char m=nptr->c; 
+    char m=nptr->c;
     free(nptr);
     return(m);
 }
@@ -57,7 +57,7 @@ int prec(char s)
   	case '/': return(a/b);
       case '*': return(a*b);
       case '+': return(a+b);
-      case '-': return(a-b);	
+      case '-': return(a-b);
 	  }
   }
 int main()
@@ -104,7 +104,7 @@ int main()
                          {
                              push(z);
                          }
-                         
+
                      }
                      push(f);
                      break;
@@ -112,12 +112,12 @@ int main()
             default:
                     d[j++]=f;
                     n++;
-                    
+
         }
     }
     while(!(isEmpty()))
     {
-        d[j++]=pop();    
+        d[j++]=pop();
     }
     d[j]='\0';
     cout<<"\n The postfix expression is"<<d;
@@ -171,5 +171,3 @@ int main()
 			 cout<<"\n The value of the expression is : "<<s;
 		 }
 	 }
-   
-    
